@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Tag Manager - delayed load -->
+    <script>window.addEventListener('load',function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N3SZJLC6');},3000);});</script>
+    <!-- End Google Tag Manager -->
+    <title>Fazendinha Joias | Compramos Ouro e Prata com Pagamento Imediato</title>
+    <meta name="description" content="Venda seu ouro e prata com avaliação gratuita e pagamento na hora. Dinheiro ou PIX. Loja em Santana de Parnaíba, SP.">
+    <meta name="keywords" content="comprar ouro, vender ouro, comprar prata, avaliação ouro, ouro Santana de Parnaíba, Jardim do Luar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fazendinha Joias | Compramos Ouro e Prata">
+    <meta property="og:description" content="Seu ouro e prata vale mais do que você imagina. Avaliação gratuita e pagamento imediato.">
+    <meta property="og:image" content="img/logo-sm.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fazendinhajoias.com.br">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-circular-sm.png">
+
+    <!-- Preload hero image (LCP) -->
+    <link rel="preload" as="image" href="img/hero-bg-mobile.jpg" media="(max-width:768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="img/hero-bg.jpg" media="(min-width:769px)" fetchpriority="high">
+
+    <!-- Google Fonts - display swap para não bloquear render -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Remixicon - lazy load -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"></noscript>
+
+    <!-- Critical CSS inline -->
+    <style>
+        @font-face{font-family:'Inter Fallback';src:local('Arial');size-adjust:107%;ascent-override:90%;descent-override:22%;line-gap-override:0%}
+        @font-face{font-family:'Montserrat Fallback';src:local('Arial Black');size-adjust:112%;ascent-override:85%;descent-override:22%;line-gap-override:0%}
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth;scroll-padding-top:80px}
+        body{font-family:'Inter','Inter Fallback',system-ui,-apple-system,sans-serif;background:#0A0A0A;color:#fff;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+        img{max-width:100%;height:auto;display:block}
+        a{text-decoration:none;color:inherit}
+        ul{list-style:none}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px}
+        .header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:.3s;background:transparent}
+        .header.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0;border-bottom:1px solid rgba(245,197,24,.1)}
+        .header__container{display:flex;align-items:center;justify-content:space-between}
+        .header__logo{display:flex;align-items:center;gap:12px}
+        .header__logo-img{height:50px;width:auto}
+        .header__logo-text{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:1.4rem;font-weight:800}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:.3s;border:2px solid transparent;white-space:nowrap}
+        .btn--primary{background:#F5C518;color:#0A0A0A;border-color:#F5C518}
+        .header__cta{padding:10px 24px;font-size:.95rem}
+        .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+        .hero__bg{position:absolute;inset:0;background:url('img/hero-bg-mobile.jpg') center/cover no-repeat}
+        @media(min-width:769px){.hero__bg{background-image:url('img/hero-bg.jpg')}}
+        .hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.75) 50%,rgba(10,10,10,.6) 100%)}
+        @media(min-width:769px){.hero__overlay{background:linear-gradient(135deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.7) 50%,rgba(10,10,10,.4) 100%)}}
+        .hero__container{position:relative;z-index:2;padding:140px 24px 80px}
+        .hero__content{max-width:650px}
+        .hero__title{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;margin-bottom:20px}
+        .hero__subtitle{font-size:clamp(1rem,2vw,1.2rem);color:#bbb;margin-bottom:32px;max-width:540px}
+        .hero__ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
+        .hero__badges{display:flex;gap:24px;flex-wrap:wrap}
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.4,0,.2,1)}
+        .reveal.active{opacity:1;transform:translateY(0)}
+        .hero .reveal{opacity:1;transform:none}
+        @media(max-width:768px){.hero__container{padding:250px 20px 60px}.hero__content{max-width:100%}.hero__overlay{background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.75) 50%,rgba(10,10,10,.6) 100%)}.hero__ctas{flex-direction:column}.hero__ctas .btn{justify-content:center;width:100%}.hero__badges{gap:12px}.header__logo-img{height:42px}.header__cta{padding:8px 18px;font-size:.85rem}}
+        @media(max-width:600px){.hero__container{padding:250px 16px 50px}.hero__badges{flex-direction:column}.badge{justify-content:center}.header__logo-img{height:36px}}
+        @media(max-width:420px){.hero__container{padding-top:100px!important}.hero__title{font-size:1.8rem}.hero__subtitle{font-size:.95rem}.header__logo-img{height:32px}.header__logo-text{font-size:.9rem}.header__cta{padding:8px 14px;font-size:.8rem;gap:4px}}
+    </style>
+
+    <!-- Full CSS - non-blocking -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Fazendinha Joias",
+        "description": "Compra de ouro e prata com pagamento imediato",
+        "image": "https://fazendinhajoias.com.br/img/logo-sm.png",
+        "telephone": "+5511993094099",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Lua Crescente, 08, Sala 11",
+            "addressLocality": "Santana de Parnaíba",
+            "addressRegion": "SP",
+            "postalCode": "06529-017",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-23.4440",
+            "longitude": "-46.8570"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3SZJLC6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="img/logo-sm.png" alt="Fazendinha Joias" class="header__logo-img" width="50" height="50">
+                <span class="header__logo-text">Fazendinha Joias</span>
+            </a>
+            <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de avaliar meu ouro." class="btn btn--primary header__cta" target="_blank" rel="noopener">
+                <i class="ri-whatsapp-line"></i> Avaliar meu ouro
+            </a>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title reveal">
+                    Seu <span class="gold-shimmer">ouro</span> e <span class="gold-shimmer">prata</span> vale <span class="hero__highlight">mais</span> do que você imagina.
+                </h1>
+                <p class="hero__subtitle reveal reveal--delay-1">
+                    Avaliação gratuita. Proposta transparente do dia e pagamento na hora. Venha até a nossa loja em Santana de Parnaíba e saia com o valor do seu ouro em mãos.
+                </p>
+                <div class="hero__ctas reveal reveal--delay-2">
+                    <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de fazer uma avaliação gratuita." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                        <i class="ri-whatsapp-line"></i> Avaliação Gratuita Agora
+                    </a>
+                    <a href="#como-funciona" class="btn btn--outline btn--lg">
+                        Como Funciona?
+                    </a>
+                </div>
+                <div class="hero__badges reveal reveal--delay-3">
+                    <div class="badge">
+                        <i class="ri-shield-check-line"></i>
+                        <span>100% Seguro</span>
+                    </div>
+                    <div class="badge">
+                        <i class="ri-money-dollar-circle-line"></i>
+                        <span>Pagamento na Hora</span>
+                    </div>
+                    <div class="badge">
+                        <i class="ri-trophy-line"></i>
+                        <span>Melhor Preço</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== O QUE COMPRAMOS ========== -->
+    <section class="compramos" id="compramos">
+        <div class="container compramos__container">
+            <div class="compramos__content reveal">
+                <h2 class="section__title">
+                    <span class="gold-shimmer">Ouro</span> e <span class="gold-shimmer">Prata</span> em qualquer forma tem <strong>valor</strong> aqui
+                </h2>
+                <ul class="compramos__list">
+                    <li class="compramos__item">
+                        <i class="ri-vip-crown-line"></i>
+                        Joias em geral (anéis, pulseiras, colares, brincos)
+                    </li>
+                    <li class="compramos__item">
+                        <i class="ri-links-line"></i>
+                        Correntes, alianças e pingentes
+                    </li>
+                    <li class="compramos__item">
+                        <i class="ri-hammer-line"></i>
+                        Fragmentos e peças danificadas
+                    </li>
+                    <li class="compramos__item">
+                        <i class="ri-coin-line"></i>
+                        Moedas e barras de ouro e prata
+                    </li>
+                    <li class="compramos__item">
+                        <i class="ri-emotion-happy-line"></i>
+                        Dentes de ouro e prata
+                    </li>
+                    <li class="compramos__item">
+                        <i class="ri-vip-diamond-line"></i>
+                        Ouro e Prata 18k, 14k e outros quilates
+                    </li>
+                </ul>
+                <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Tenho dúvidas sobre o que vocês compram." class="btn btn--outline" target="_blank" rel="noopener">
+                    <i class="ri-whatsapp-line"></i> Tirar dúvidas no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMO FUNCIONA (3 PASSOS) ========== -->
+    <section class="passos" id="como-funciona">
+        <div class="container">
+            <h2 class="section__title section__title--center reveal">
+                Venda seu <span class="gold-shimmer">ouro</span> e <span class="gold-shimmer">prata</span> em <strong>3 passos</strong>
+            </h2>
+            <div class="passos__grid">
+                <div class="passo reveal reveal--delay-1">
+                    <div class="passo__img-wrapper">
+                        <img src="img/passo-1-mobile.jpg" alt="Avaliação Gratuita" class="passo__img" width="665" height="448" loading="lazy" srcset="img/passo-1-mobile.jpg 665w, img/passo-1.jpg 1080w" sizes="(max-width:768px) 100vw, 320px">
+                    </div>
+                    <div class="passo__body">
+                        <div class="passo__number">01</div>
+                        <div class="passo__text">
+                            <h3 class="passo__title">Avaliação Gratuita</h3>
+                            <p class="passo__desc">Especialistas analisam seu ouro de forma técnica e transparente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="passos__connector reveal">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="passo reveal reveal--delay-2">
+                    <div class="passo__img-wrapper">
+                        <img src="img/passo-2-mobile.jpg" alt="Proposta Sem Compromisso" class="passo__img" width="665" height="375" loading="lazy" srcset="img/passo-2-mobile.jpg 665w, img/passo-2.jpg 1080w" sizes="(max-width:768px) 100vw, 320px">
+                    </div>
+                    <div class="passo__body">
+                        <div class="passo__number">02</div>
+                        <div class="passo__text">
+                            <h3 class="passo__title">Proposta Sem Compromisso</h3>
+                            <p class="passo__desc">Receba a melhor oferta com base na cotação do dia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="passos__connector reveal">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="passo reveal reveal--delay-3">
+                    <div class="passo__img-wrapper">
+                        <img src="img/passo-3-mobile.jpg" alt="Pagamento na Hora" class="passo__img" width="665" height="375" loading="lazy" srcset="img/passo-3-mobile.jpg 665w, img/passo-3.jpg 1080w" sizes="(max-width:768px) 100vw, 320px">
+                    </div>
+                    <div class="passo__body">
+                        <div class="passo__number">03</div>
+                        <div class="passo__text">
+                            <h3 class="passo__title">Pagamento na Hora</h3>
+                            <p class="passo__desc">Aceite e saia com o dinheiro em mãos, PIX ou espécie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="passos__cta reveal">
+                <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Quero vender meu ouro." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                    <i class="ri-whatsapp-line"></i> Quero vender meu ouro agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== POR QUE ESCOLHER ========== -->
+    <section class="beneficios" id="beneficios">
+        <div class="container">
+            <h2 class="section__title section__title--center reveal">
+                Credibilidade que você sente <strong>na</strong> <span class="underline-gold">prática</span>
+            </h2>
+            <div class="beneficios__grid">
+                <div class="beneficio reveal reveal--delay-1">
+                    <div class="beneficio__icon">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h3 class="beneficio__title">Segurança Total</h3>
+                    <p class="beneficio__desc">Ambiente seguro, processo transparente, equipe especializada.</p>
+                </div>
+                <div class="beneficio reveal reveal--delay-2">
+                    <div class="beneficio__icon">
+                        <i class="ri-scales-3-line"></i>
+                    </div>
+                    <h3 class="beneficio__title">Avaliação Justa</h3>
+                    <p class="beneficio__desc">Cotação baseada no valor oficial de mercado do dia, sem surpresas.</p>
+                </div>
+                <div class="beneficio reveal reveal--delay-3">
+                    <div class="beneficio__icon">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                    <h3 class="beneficio__title">Pagamento Imediato</h3>
+                    <p class="beneficio__desc">PIX ou dinheiro na hora, sem burocracia.</p>
+                </div>
+                <div class="beneficio reveal reveal--delay-4">
+                    <div class="beneficio__icon">
+                        <i class="ri-heart-pulse-line"></i>
+                    </div>
+                    <h3 class="beneficio__title">Sem Pressão</h3>
+                    <p class="beneficio__desc">Avaliação gratuita, sem compromisso de aceitar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ONDE ESTAMOS ========== -->
+    <section class="localizacao" id="localizacao">
+        <div class="container localizacao__container">
+            <div class="localizacao__map reveal">
+                <iframe
+                    src="about:blank"
+                    data-src="https://maps.google.com/maps?q=Rua+Lua+Crescente+08+Jardim+do+Luar+Santana+de+Parnaíba+SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0; border-radius: 16px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização Fazendinha Joias">
+                </iframe>
+            </div>
+            <div class="localizacao__info reveal">
+                <h2 class="section__title">Venha nos <span class="underline-gold">visitar</span></h2>
+                <address class="localizacao__address">
+                    <p><i class="ri-map-pin-line"></i> Rua Lua Crescente, 08 – Sala 11</p>
+                    <p>Jardim do Luar, Santana de Parnaíba/SP</p>
+                    <p>CEP 06529-017</p>
+                </address>
+                <div class="localizacao__contact">
+                    <p><i class="ri-phone-line"></i> (11) 99309-4099</p>
+                </div>
+                <a href="https://www.google.com/maps/search/Rua+Lua+Crescente+08+Jardim+do+Luar+Santana+de+Parnaíba+SP" class="btn btn--outline" target="_blank" rel="noopener">
+                    <i class="ri-map-2-line"></i> Ver no Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta-final" id="cta-final">
+        <div class="container cta-final__container">
+            <h2 class="cta-final__title reveal">Transforme seu tesouro em <strong>liquidez</strong> hoje</h2>
+            <p class="cta-final__subtitle reveal reveal--delay-1">Fale agora pelo WhatsApp, tire suas dúvidas e agende sua avaliação gratuita.</p>
+            <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de agendar uma avaliação." class="btn btn--dark btn--lg btn--pulse reveal reveal--delay-2" target="_blank" rel="noopener">
+                <i class="ri-whatsapp-line"></i> Falar no WhatsApp Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <img src="img/logo-sm.png" alt="Fazendinha Joias" class="footer__logo" width="50" height="50" loading="lazy">
+                <span class="footer__name">Fazendinha Joias</span>
+            </div>
+            <div class="footer__info">
+                <p><i class="ri-map-pin-line"></i> Rua Lua Crescente, 08 – Sala 11, Jardim do Luar, Santana de Parnaíba/SP, CEP 06529-017</p>
+            </div>
+            <div class="footer__contact">
+                <a href="https://wa.me/5511993094099" target="_blank" rel="noopener">
+                    <i class="ri-whatsapp-line"></i> (11) 99309-4099
+                </a>
+                <a href="https://wa.me/5511919546760" target="_blank" rel="noopener">
+                    <i class="ri-whatsapp-line"></i> (11) 91954-6760
+                </a>
+                <a href="https://www.instagram.com/fazendinhajoias/" target="_blank" rel="noopener">
+                    <i class="ri-instagram-line"></i> @fazendinhajoias
+                </a>
+            </div>
+            <div class="footer__cnpj">
+                <p>CNPJ: 00.000.000/0001-00</p>
+            </div>
+            <div class="footer__copy">
+                <p>&copy; 2025 Fazendinha Joias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLUTUANTE ========== -->
+    <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de mais informações." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <!-- JS - defer para não bloquear -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Pixel de Rastreamento - Token: b7e2f19a4c8d3e5609a1bc47 -->
+    <script>
+    console.log('%cPixel de Rastreamento Ativo - Token: b7e2f19a4c8d3e5609a1bc47', 'color: #D4AF37; font-size: 14px;');
+    (function(){
+      var TK="b7e2f19a4c8d3e5609a1bc47";
+      var EP="https://pajblplxhgebssydyesb.supabase.co/functions/v1/tracking-pixel";
+      var CK="_tk_"+TK;
+      function setCookie(name,val,maxAge){document.cookie=name+"="+encodeURIComponent(val)+";path=/;max-age="+maxAge+";SameSite=Lax";}
+      function getCookie(name){var c=document.cookie.match(new RegExp("(^| )"+name+"=([^;]+)"));return c?decodeURIComponent(c[2]):null;}
+      function getTid(){var id=getCookie(CK);if(id)return id;id="tk_"+Math.random().toString(36).substr(2,12)+Date.now().toString(36);setCookie(CK,id,31536000);return id;}
+      function getSid(){var s=sessionStorage.getItem("_tksid");if(s)return s;s="s_"+Math.random().toString(36).substr(2,8);sessionStorage.setItem("_tksid",s);return s;}
+      function getParam(name){var p=new URLSearchParams(window.location.search);return p.get(name)||"";}
+      function saveSessionUtms(params){try{sessionStorage.setItem("_tkutms",JSON.stringify(params));}catch(e){}}
+      function getSessionUtms(){try{var s=sessionStorage.getItem("_tkutms");return s?JSON.parse(s):null;}catch(e){return null;}}
+      var urlSource=getParam("utm_source"),urlMedium=getParam("utm_medium"),urlCampaign=getParam("utm_campaign"),urlContent=getParam("utm_content"),urlTerm=getParam("utm_term");
+      var fbclid=getParam("fbclid"),gclid=getParam("gclid"),ttclid=getParam("ttclid");
+      var sessionUtms=getSessionUtms();
+      if(urlSource){saveSessionUtms({s:urlSource,m:urlMedium,c:urlCampaign,cn:urlContent,t:urlTerm,fb:fbclid,gc:gclid,tt:ttclid});}
+      else if(sessionUtms){urlSource=sessionUtms.s||"";urlMedium=sessionUtms.m||"";urlCampaign=sessionUtms.c||"";urlContent=sessionUtms.cn||"";urlTerm=sessionUtms.t||"";if(!fbclid)fbclid=sessionUtms.fb||"";if(!gclid)gclid=sessionUtms.gc||"";if(!ttclid)ttclid=sessionUtms.tt||"";}
+      var utmSource=urlSource,utmMedium=urlMedium,utmCampaign=urlCampaign,utmContent=urlContent,utmTerm=urlTerm;
+      var isAdClick=!!(fbclid||gclid||ttclid);
+      if(isAdClick){if(utmSource)setCookie("cookieUtmSource",utmSource,63072000);if(utmMedium)setCookie("cookieUtmMedium",utmMedium,63072000);if(utmCampaign)setCookie("cookieUtmCampaign",utmCampaign,63072000);if(utmContent)setCookie("cookieUtmContent",utmContent,63072000);if(utmTerm)setCookie("cookieUtmTerm",utmTerm,63072000);}
+      if(!utmSource){try{if(document.referrer){var refParams=new URLSearchParams(new URL(document.referrer).search);utmSource=refParams.get("utm_source")||new URL(document.referrer).hostname;}else{utmSource="direto";}}catch(e){utmSource="direto";}}
+      var utms={utm_source:utmSource,utm_medium:utmMedium,utm_campaign:utmCampaign,utm_content:utmContent,utm_term:utmTerm};
+      var sckValues=Object.values(utms).filter(function(v){return v!==""});var sck=sckValues.join("|");
+      var cookieSrc=getCookie("cookieUtmSource")||"",cookieMdm=getCookie("cookieUtmMedium")||"",cookieCmp=getCookie("cookieUtmCampaign")||"",cookieCnt=getCookie("cookieUtmContent")||"",cookieTrm=getCookie("cookieUtmTerm")||"";
+      var srcValues=[cookieSrc,cookieMdm,cookieCmp,cookieCnt,cookieTrm].filter(function(v){return v!==""});var src=srcValues.join("|");
+      function updateLinks(){var allParams=new URLSearchParams(window.location.search);document.querySelectorAll("a").forEach(function(el){try{var elURL=new URL(el.href,window.location.origin);if(elURL.hash&&!elURL.search&&!elURL.pathname.match(/wa\.me|whatsapp/))return;var isWaLink=elURL.hostname.indexOf("wa.me")>-1||elURL.hostname.indexOf("api.whatsapp.com")>-1;var sp=new URLSearchParams(elURL.search);var modified=false;if(isWaLink){for(var k in utms){if(utms[k]&&!sp.has(k)){sp.append(k,utms[k]);modified=true;}}if(!sp.has("_tid")){sp.append("_tid",getTid());modified=true;}if(sck&&!sp.has("sck")){sp.append("sck",sck);modified=true;}}else{allParams.forEach(function(v,k){if(!sp.has(k)){sp.append(k,v);modified=true;}});for(var k in utms){if(utms[k]&&!sp.has(k)){sp.append(k,utms[k]);modified=true;}}if(cookieSrc&&!sp.has("cookieUtmSource"))sp.append("cookieUtmSource",cookieSrc);if(cookieMdm&&!sp.has("cookieUtmMedium"))sp.append("cookieUtmMedium",cookieMdm);if(cookieCmp&&!sp.has("cookieUtmCampaign"))sp.append("cookieUtmCampaign",cookieCmp);if(cookieCnt&&!sp.has("cookieUtmContent"))sp.append("cookieUtmContent",cookieCnt);if(cookieTrm&&!sp.has("cookieUtmTerm"))sp.append("cookieUtmTerm",cookieTrm);if(sck&&!sp.has("sck")){sp.append("sck",sck);modified=true;}if(src&&!sp.has("src")){sp.append("src",src);modified=true;}if(!sp.has("_tid")){sp.append("_tid",getTid());modified=true;}}if(modified){el.href=elURL.origin+elURL.pathname+"?"+sp.toString()+(elURL.hash||"");}}catch(e){}});document.querySelectorAll("iframe").forEach(function(iframe){var actualSrc=iframe.hasAttribute("data-src")?iframe.getAttribute("data-src"):iframe.src;if(!actualSrc||actualSrc==="about:blank")return;try{var iURL=new URL(actualSrc,window.location.origin);var sp=new URLSearchParams(iURL.search);for(var k in utms){if(utms[k]&&!sp.has(k))sp.append(k,utms[k]);}if(sck&&!sp.has("sck"))sp.append("sck",sck);if(src&&!sp.has("src"))sp.append("src",src);var newSrc=iURL.origin+iURL.pathname+"?"+sp.toString();if(iframe.hasAttribute("data-src")){iframe.setAttribute("data-src",newSrc);}else{iframe.src=newSrc;}}catch(e){}});}
+      updateLinks();
+      var observer=new MutationObserver(function(mutations){var hasNewLinks=mutations.some(function(m){return m.addedNodes.length>0;});if(hasNewLinks)updateLinks();});observer.observe(document.body,{childList:true,subtree:true});
+      function getDevice(){var w=window.innerWidth;if(w<=768)return"mobile";if(w<=1024)return"tablet";return"desktop";}
+      function getBrowser(){var ua=navigator.userAgent;if(ua.indexOf("Chrome")>-1&&ua.indexOf("Edg")===-1)return"Chrome";if(ua.indexOf("Safari")>-1&&ua.indexOf("Chrome")===-1)return"Safari";if(ua.indexOf("Firefox")>-1)return"Firefox";if(ua.indexOf("Edg")>-1)return"Edge";return"Other";}
+      function getOS(){var ua=navigator.userAgent;if(ua.indexOf("Win")>-1)return"Windows";if(ua.indexOf("Mac")>-1)return"MacOS";if(ua.indexOf("Linux")>-1)return"Linux";if(ua.indexOf("Android")>-1)return"Android";if(ua.indexOf("iPhone")>-1||ua.indexOf("iPad")>-1)return"iOS";return"Other";}
+      function send(evts){var payload=JSON.stringify({token:TK,events:evts});if(navigator.sendBeacon){navigator.sendBeacon(EP,new Blob([payload],{type:"application/json"}));}else{fetch(EP,{method:"POST",body:payload,headers:{"Content-Type":"application/json"},keepalive:true});}}
+      var tid=getTid(),sid=getSid();
+      send([{type:"pageview",tid:tid,sid:sid,url:window.location.href,ref:document.referrer||"",src:utmSource,mdm:utmMedium,cmp:utmCampaign,cnt:utmContent,trm:utmTerm,fbclid:fbclid,gclid:gclid,ttclid:ttclid,dev:getDevice(),brw:getBrowser(),os:getOS(),sks:{source:utmSource,medium:utmMedium,campaign:utmCampaign,content:utmContent,term:utmTerm},src_history:{cookieSource:cookieSrc,cookieMedium:cookieMdm,cookieCampaign:cookieCmp,cookieContent:cookieCnt,cookieTerm:cookieTrm},sck:sck,src_param:src,ts:new Date().toISOString()}]);
+      document.addEventListener("click",function(e){var el=e.target.closest("a");if(!el)return;var href=el.href||"";if(href.indexOf("wa.me")>-1||href.indexOf("api.whatsapp.com")>-1||href.indexOf("whatsapp")>-1){var phone="";try{var u=new URL(href);phone=u.pathname.split("/").join("").replace(/[^0-9]/g,"");}catch(e){}send([{type:"whatsapp_click",tid:tid,sid:sid,url:window.location.href,src:utmSource,mdm:utmMedium,cmp:utmCampaign,cnt:utmContent,trm:utmTerm,fbclid:fbclid,gclid:gclid,ttclid:ttclid,dev:getDevice(),brw:getBrowser(),os:getOS(),phone:phone,sck:sck,src_param:src,channel:"whatsapp",ts:new Date().toISOString()}]);}},true);
+      document.addEventListener("submit",function(e){var form=e.target;var data={type:"form_submit",tid:tid,sid:sid,url:window.location.href};var inputs=form.querySelectorAll("input");for(var i=0;i<inputs.length;i++){var inp=inputs[i];var n=(inp.name||inp.id||inp.type||"").toLowerCase();var v=inp.value;if(n.indexOf("email")>-1||inp.type==="email")data.email=v;if(n.indexOf("phone")>-1||n.indexOf("tel")>-1||n.indexOf("whatsapp")>-1||inp.type==="tel")data.phone=v;if(n.indexOf("name")>-1||n.indexOf("nome")>-1)data.name=v;}data.src=utmSource;data.mdm=utmMedium;data.cmp=utmCampaign;data.cnt=utmContent;data.trm=utmTerm;data.fbclid=fbclid;data.gclid=gclid;data.ttclid=ttclid;data.dev=getDevice();data.brw=getBrowser();data.os=getOS();data.sck=sck;data.src_param=src;data.channel="form";data.ts=new Date().toISOString();send([data]);},true);
+      document.addEventListener("click",function(e){var el=e.target.closest("a");if(!el)return;var href=el.href||"";if(href.indexOf("tel:")===0){var phone=href.replace("tel:","").replace(/[^0-9+]/g,"");send([{type:"phone_click",tid:tid,sid:sid,url:window.location.href,phone:phone,src:utmSource,mdm:utmMedium,cmp:utmCampaign,dev:getDevice(),brw:getBrowser(),os:getOS(),sck:sck,src_param:src,channel:"phone",ts:new Date().toISOString()}]);}},true);
+      window._tkEvent=function(type,data){data=data||{};data.type=type;data.tid=tid;data.sid=sid;data.url=window.location.href;data.sck=sck;data.src_param=src;data.ts=new Date().toISOString();send([data]);};
+    })();
+    </script>
+</body>
+</html>
