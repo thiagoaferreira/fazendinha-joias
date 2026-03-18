@@ -1,5 +1,6 @@
 /* ========================================
-   FAZENDA JOIAS - Landing Page
+   FAZENDINHA JOIAS - Landing Page
+   Identidade Visual: Fundo claro/bege + Dourado + Preto
    ======================================== */
 
 /* ===== VARIABLES ===== */
@@ -10,16 +11,21 @@
     --black: #0A0A0A;
     --black-light: #111111;
     --black-card: #1A1A1A;
-    --gray: #888888;
-    --gray-light: #CCCCCC;
+    --gray: #666666;
+    --gray-light: #999999;
+    --gray-border: #E5E5E5;
     --white: #FFFFFF;
+    --bg: #FAF8F5;
+    --bg-section: #F5F2EE;
+    --text: #1A1A1A;
+    --text-light: #555555;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Inter', sans-serif;
     --radius: 12px;
     --radius-lg: 20px;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow: 0 4px 30px rgba(245, 197, 24, 0.15);
-    --shadow-lg: 0 8px 40px rgba(245, 197, 24, 0.25);
+    --shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== RESET ===== */
@@ -36,8 +42,8 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -76,6 +82,7 @@ address {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 40px;
+    color: var(--text);
 }
 
 .section__title--center {
@@ -83,12 +90,12 @@ address {
 }
 
 .section__title strong {
-    color: var(--gold);
+    color: var(--gold-dark);
 }
 
 /* ===== GOLD SHIMMER EFFECT ===== */
 .gold-shimmer {
-    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold-dark), var(--gold));
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), var(--gold-dark), var(--gold));
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -139,31 +146,31 @@ address {
     background: var(--gold-light);
     border-color: var(--gold-light);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 30px rgba(245, 197, 24, 0.35);
 }
 
 .btn--outline {
     background: transparent;
-    color: var(--white);
-    border-color: var(--white);
+    color: var(--text);
+    border-color: var(--text);
 }
 
 .btn--outline:hover {
-    background: var(--white);
-    color: var(--black);
+    background: var(--text);
+    color: var(--white);
     transform: translateY(-2px);
 }
 
 .btn--dark {
-    background: var(--black);
-    color: var(--gold);
-    border-color: var(--black);
+    background: var(--white);
+    color: var(--gold-dark);
+    border-color: var(--white);
 }
 
 .btn--dark:hover {
-    background: var(--black-light);
+    background: var(--bg);
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
 }
 
 .btn--lg {
@@ -176,8 +183,8 @@ address {
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(10, 10, 10, 0.4); }
-    50% { box-shadow: 0 0 0 15px rgba(10, 10, 10, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+    50% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
 }
 
 /* ===== REVEAL ANIMATIONS ===== */
@@ -212,14 +219,15 @@ address {
     z-index: 1000;
     padding: 16px 0;
     transition: var(--transition);
-    background: transparent;
+    background: var(--black);
 }
 
 .header.scrolled {
-    background: rgba(10, 10, 10, 0.92);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 10px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(245, 197, 24, 0.1);
 }
 
@@ -263,6 +271,7 @@ address {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
@@ -270,28 +279,38 @@ address {
     position: absolute;
     inset: 0;
     background: url('../img/hero-bg.jpg') center/cover no-repeat;
-    transform: scale(1.05);
-    transition: transform 10s ease-out;
-}
-
-.hero.loaded .hero__bg {
-    transform: scale(1);
 }
 
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.4) 100%);
+    background: linear-gradient(135deg, rgba(250, 248, 245, 0.95) 0%, rgba(250, 248, 245, 0.85) 50%, rgba(250, 248, 245, 0.3) 100%);
+}
+
+.hero__location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.hero__location i {
+    color: var(--gold-dark);
+    font-size: 1.1rem;
 }
 
 .hero__container {
     position: relative;
     z-index: 2;
     padding: 140px 24px 80px;
+    padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+    width: 100%;
 }
 
 .hero__content {
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .hero__title {
@@ -300,10 +319,11 @@ address {
     font-weight: 900;
     line-height: 1.15;
     margin-bottom: 20px;
+    color: var(--text);
 }
 
 .hero__highlight {
-    color: var(--gold);
+    color: var(--gold-dark);
     text-decoration: underline;
     text-decoration-color: var(--gold);
     text-underline-offset: 4px;
@@ -311,7 +331,7 @@ address {
 
 .hero__subtitle {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    color: var(--gray-light);
+    color: var(--text-light);
     margin-bottom: 32px;
     max-width: 540px;
 }
@@ -335,31 +355,37 @@ address {
     gap: 8px;
     padding: 8px 16px;
     background: rgba(245, 197, 24, 0.1);
-    border: 1px solid rgba(245, 197, 24, 0.2);
+    border: 1px solid rgba(245, 197, 24, 0.25);
     border-radius: 50px;
     font-size: 0.85rem;
-    color: var(--gold);
+    color: var(--text);
     font-weight: 500;
 }
 
 .badge i {
     font-size: 1.1rem;
+    color: var(--gold-dark);
+}
+
+/* ===== GOLD BOTTOM BORDER (hero/sections separator) ===== */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
 /* ========== O QUE COMPRAMOS ========== */
 .compramos {
-    padding: 100px 0;
+    padding: 80px 0 100px;
     position: relative;
     overflow: hidden;
-    background: url('../img/compramos-bg.jpg') center/cover no-repeat;
-}
-
-.compramos::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.88) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.5) 100%);
-    pointer-events: none;
+    background: url('../img/compramos-bg.jpg') right center / cover no-repeat;
+    background-color: var(--bg);
+    min-height: 400px;
 }
 
 .compramos__container {
@@ -374,45 +400,52 @@ address {
 .compramos__list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin: 32px 0;
+    gap: 6px;
+    margin: 24px 0 32px;
 }
 
 .compramos__item {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 14px 20px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: var(--radius);
-    font-size: 1rem;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 1.05rem;
+    color: var(--text);
     transition: var(--transition);
 }
 
 .compramos__item:hover {
-    background: rgba(245, 197, 24, 0.08);
-    border-color: rgba(245, 197, 24, 0.2);
-    transform: translateX(8px);
+    transform: translateX(4px);
+    color: var(--gold-dark);
 }
 
-.compramos__item i {
+.compramos__item::before {
+    content: '•';
     font-size: 1.4rem;
-    color: var(--gold);
-    min-width: 24px;
+    color: var(--gold-dark);
+    font-weight: 700;
+    min-width: 16px;
 }
 
-.compramos__visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.compramos__img-mobile {
+    display: none;
 }
 
+.compramos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gold);
+}
 
 /* ========== COMO FUNCIONA (3 PASSOS) ========== */
 .passos {
     padding: 100px 0;
     background: var(--black);
+    color: var(--white);
 }
 
 .passos__grid {
@@ -455,7 +488,7 @@ address {
 .passo:hover {
     border-color: rgba(245, 197, 24, 0.3);
     transform: translateY(-8px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 40px rgba(245, 197, 24, 0.15);
 }
 
 .passo__img-wrapper {
@@ -488,7 +521,7 @@ address {
     font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 900;
-    color: rgba(245, 197, 24, 0.25);
+    color: rgba(212, 160, 23, 0.3);
     line-height: 1;
     min-width: 60px;
 }
@@ -502,12 +535,17 @@ address {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 8px;
+    color: var(--white);
 }
 
 .passo__desc {
     color: var(--gray-light);
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.passos .section__title {
+    color: var(--white);
 }
 
 .passos__connector {
@@ -523,7 +561,7 @@ address {
 /* ========== BENEFÍCIOS ========== */
 .beneficios {
     padding: 100px 0;
-    background: var(--black-light);
+    background: var(--bg);
 }
 
 .beneficios__grid {
@@ -544,7 +582,7 @@ address {
 
 .beneficio:hover {
     transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 40px rgba(245, 197, 24, 0.35);
 }
 
 .beneficio__icon {
@@ -578,8 +616,9 @@ address {
 
 /* ========== LOCALIZAÇÃO ========== */
 .localizacao {
-    padding: 100px 0;
-    background: var(--black);
+    padding: 100px 0 120px;
+    background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 10%, var(--black) 55%);
+    margin-top: -1px;
 }
 
 .localizacao__container {
@@ -593,7 +632,8 @@ address {
     border-radius: var(--radius-lg);
     overflow: hidden;
     aspect-ratio: 4/3;
-    border: 2px solid rgba(245, 197, 24, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: var(--shadow);
 }
 
 .localizacao__map iframe {
@@ -606,7 +646,7 @@ address {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    color: var(--gray-light);
+    color: var(--white);
     font-size: 1.05rem;
 }
 
@@ -620,33 +660,47 @@ address {
     margin-bottom: 28px;
     font-size: 1.1rem;
     font-weight: 600;
+    color: var(--white);
+}
+
+.localizacao .section__title {
+    color: var(--black);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+    paint-order: stroke fill;
+}
+
+.localizacao .btn--outline {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.localizacao .btn--outline:hover {
+    background: var(--white);
+    color: var(--black);
 }
 
 /* ========== CTA FINAL ========== */
 .cta-final {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
-    background-size: 200% 200%;
-    animation: gradient-move 6s ease-in-out infinite;
+    background: var(--black);
     text-align: center;
-}
-
-@keyframes gradient-move {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
 }
 
 .cta-final__title {
     font-family: var(--font-heading);
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     font-weight: 900;
-    color: var(--black);
+    color: var(--white);
     margin-bottom: 16px;
+}
+
+.cta-final__title strong {
+    color: var(--gold);
 }
 
 .cta-final__subtitle {
     font-size: 1.1rem;
-    color: rgba(10, 10, 10, 0.7);
+    color: var(--gray-light);
     margin-bottom: 32px;
     max-width: 500px;
     margin-left: auto;
@@ -683,6 +737,7 @@ address {
     font-family: var(--font-heading);
     font-size: 1.3rem;
     font-weight: 800;
+    color: var(--white);
 }
 
 .footer__info {
@@ -853,7 +908,24 @@ address {
     }
 
     .compramos {
-        background-image: url('../img/compramos-bg-mobile.jpg');
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .compramos__content {
+        max-width: 100%;
+    }
+
+    .compramos__img-mobile {
+        display: block;
+        margin-top: 24px;
+        width: 100vw;
+        margin-left: -20px;
+        max-width: none;
+    }
+
+    .compramos::after {
+        display: none;
     }
 
     .container {
@@ -878,7 +950,7 @@ address {
     }
 
     .hero__container {
-        padding: 250px 20px 60px;
+        padding: 120px 20px 60px;
     }
 
     .hero__content {
@@ -886,7 +958,7 @@ address {
     }
 
     .hero__overlay {
-        background: linear-gradient(180deg, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.75) 50%, rgba(10, 10, 10, 0.6) 100%);
+        background: linear-gradient(180deg, rgba(250, 248, 245, 0.97) 0%, rgba(250, 248, 245, 0.9) 60%, rgba(250, 248, 245, 0.5) 100%);
     }
 
     .hero__ctas {
@@ -903,7 +975,7 @@ address {
     }
 
     .compramos {
-        padding: 70px 0;
+        padding: 70px 0 0;
     }
 
     .compramos__item {
@@ -973,7 +1045,7 @@ address {
     }
 
     .hero__container {
-        padding: 250px 16px 50px;
+        padding: 120px 16px 50px;
     }
 
     .hero__badges {
@@ -985,8 +1057,7 @@ address {
     }
 
     .compramos {
-        padding: 60px 0;
-        background-position: right center;
+        padding: 60px 0 0;
     }
 
     .compramos__item {

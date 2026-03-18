@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Tag Manager - delayed load -->
-    <script>window.addEventListener('load',function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N3SZJLC6');},3000);});</script>
+    <script>window.addEventListener('load',function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5QF3ZKF');},3000);});</script>
     <!-- End Google Tag Manager -->
     <title>Fazendinha Joias | Compramos Ouro e Prata com Pagamento Imediato</title>
     <meta name="description" content="Venda seu ouro e prata com avaliação gratuita e pagamento na hora. Dinheiro ou PIX. Loja em Santana de Parnaíba, SP.">
@@ -41,36 +41,38 @@
         @font-face{font-family:'Montserrat Fallback';src:local('Arial Black');size-adjust:112%;ascent-override:85%;descent-override:22%;line-gap-override:0%}
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         html{scroll-behavior:smooth;scroll-padding-top:80px}
-        body{font-family:'Inter','Inter Fallback',system-ui,-apple-system,sans-serif;background:#0A0A0A;color:#fff;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+        body{font-family:'Inter','Inter Fallback',system-ui,-apple-system,sans-serif;background:#FAF8F5;color:#1A1A1A;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
         img{max-width:100%;height:auto;display:block}
         a{text-decoration:none;color:inherit}
         ul{list-style:none}
         .container{max-width:1200px;margin:0 auto;padding:0 24px}
-        .header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:.3s;background:transparent}
-        .header.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0;border-bottom:1px solid rgba(245,197,24,.1)}
+        .header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:.3s;background:#0A0A0A}
+        .header.scrolled{background:rgba(10,10,10,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.3);border-bottom:1px solid rgba(245,197,24,.1)}
         .header__container{display:flex;align-items:center;justify-content:space-between}
         .header__logo{display:flex;align-items:center;gap:12px}
         .header__logo-img{height:50px;width:auto}
-        .header__logo-text{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:1.4rem;font-weight:800}
+        .header__logo-text{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:1.4rem;font-weight:800;color:#fff}
         .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:.3s;border:2px solid transparent;white-space:nowrap}
         .btn--primary{background:#F5C518;color:#0A0A0A;border-color:#F5C518}
+        .btn--outline{background:transparent;color:#1A1A1A;border-color:#1A1A1A}
         .header__cta{padding:10px 24px;font-size:.95rem}
         .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
         .hero__bg{position:absolute;inset:0;background:url('img/hero-bg-mobile.jpg') center/cover no-repeat}
         @media(min-width:769px){.hero__bg{background-image:url('img/hero-bg.jpg')}}
-        .hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.75) 50%,rgba(10,10,10,.6) 100%)}
-        @media(min-width:769px){.hero__overlay{background:linear-gradient(135deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.7) 50%,rgba(10,10,10,.4) 100%)}}
-        .hero__container{position:relative;z-index:2;padding:140px 24px 80px}
-        .hero__content{max-width:650px}
-        .hero__title{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;margin-bottom:20px}
-        .hero__subtitle{font-size:clamp(1rem,2vw,1.2rem);color:#bbb;margin-bottom:32px;max-width:540px}
+        .hero__overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(250,248,245,.95) 0%,rgba(250,248,245,.85) 50%,rgba(250,248,245,.3) 100%)}
+        .hero__location{display:flex;align-items:center;gap:8px;font-size:.9rem;color:#555;margin-bottom:16px}
+        .hero__location i{color:#D4A017;font-size:1.1rem}
+        .hero__container{position:relative;z-index:2;padding:140px 24px 80px;padding-left:max(24px,calc((100vw - 1200px) / 2 + 24px));width:100%}
+        .hero__content{max-width:600px}
+        .hero__title{font-family:'Montserrat','Montserrat Fallback',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;margin-bottom:20px;color:#1A1A1A}
+        .hero__subtitle{font-size:clamp(1rem,2vw,1.2rem);color:#555;margin-bottom:32px;max-width:540px}
         .hero__ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
         .hero__badges{display:flex;gap:24px;flex-wrap:wrap}
         .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.4,0,.2,1)}
         .reveal.active{opacity:1;transform:translateY(0)}
         .hero .reveal{opacity:1;transform:none}
-        @media(max-width:768px){.hero__container{padding:250px 20px 60px}.hero__content{max-width:100%}.hero__overlay{background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.75) 50%,rgba(10,10,10,.6) 100%)}.hero__ctas{flex-direction:column}.hero__ctas .btn{justify-content:center;width:100%}.hero__badges{gap:12px}.header__logo-img{height:42px}.header__cta{padding:8px 18px;font-size:.85rem}}
-        @media(max-width:600px){.hero__container{padding:250px 16px 50px}.hero__badges{flex-direction:column}.badge{justify-content:center}.header__logo-img{height:36px}}
+        @media(max-width:768px){.hero__container{padding:120px 20px 60px}.hero__content{max-width:100%}.hero__overlay{background:linear-gradient(180deg,rgba(250,248,245,.97) 0%,rgba(250,248,245,.9) 60%,rgba(250,248,245,.5) 100%)}.hero__ctas{flex-direction:column}.hero__ctas .btn{justify-content:center;width:100%}.hero__badges{gap:12px}.header__logo-img{height:42px}.header__cta{padding:8px 18px;font-size:.85rem}}
+        @media(max-width:600px){.hero__container{padding:120px 16px 50px}.hero__badges{flex-direction:column}.badge{justify-content:center}.header__logo-img{height:36px}}
         @media(max-width:420px){.hero__container{padding-top:100px!important}.hero__title{font-size:1.8rem}.hero__subtitle{font-size:.95rem}.header__logo-img{height:32px}.header__logo-text{font-size:.9rem}.header__cta{padding:8px 14px;font-size:.8rem;gap:4px}}
     </style>
 
@@ -86,7 +88,7 @@
         "name": "Fazendinha Joias",
         "description": "Compra de ouro e prata com pagamento imediato",
         "image": "https://fazendinhajoias.com.br/img/logo-sm.png",
-        "telephone": "+5511993094099",
+        "telephone": "+5511915136151",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Rua Lua Crescente, 08, Sala 11",
@@ -106,7 +108,7 @@
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3SZJLC6"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5QF3ZKF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -117,7 +119,7 @@
                 <img src="img/logo-sm.png" alt="Fazendinha Joias" class="header__logo-img" width="50" height="50">
                 <span class="header__logo-text">Fazendinha Joias</span>
             </a>
-            <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de avaliar meu ouro." class="btn btn--primary header__cta" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Gostaria de avaliar meu ouro." class="btn btn--primary header__cta" target="_blank" rel="noopener">
                 <i class="ri-whatsapp-line"></i> Avaliar meu ouro
             </a>
         </div>
@@ -127,20 +129,24 @@
     <section class="hero" id="hero">
         <div class="hero__bg"></div>
         <div class="hero__overlay"></div>
-        <div class="container hero__container">
+        <div class="hero__container">
             <div class="hero__content">
+                <div class="hero__location reveal">
+                    <i class="ri-map-pin-line"></i>
+                    <span>Santana de Parnaíba • Atendimento seguro e transparente</span>
+                </div>
                 <h1 class="hero__title reveal">
                     Seu <span class="gold-shimmer">ouro</span> e <span class="gold-shimmer">prata</span> vale <span class="hero__highlight">mais</span> do que você imagina.
                 </h1>
                 <p class="hero__subtitle reveal reveal--delay-1">
-                    Avaliação gratuita. Proposta transparente do dia e pagamento na hora. Venha até a nossa loja em Santana de Parnaíba e saia com o valor do seu ouro em mãos.
+                    Avaliação gratuita, proposta justa com base na cotação do dia e pagamento na hora. Venha até a Fazendinha Joias e transforme seu metal precioso em dinheiro de verdade.
                 </p>
                 <div class="hero__ctas reveal reveal--delay-2">
-                    <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de fazer uma avaliação gratuita." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                    <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Gostaria de fazer uma avaliação gratuita." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
                         <i class="ri-whatsapp-line"></i> Avaliação Gratuita Agora
                     </a>
                     <a href="#como-funciona" class="btn btn--outline btn--lg">
-                        Como Funciona?
+                        Ver como funciona
                     </a>
                 </div>
                 <div class="hero__badges reveal reveal--delay-3">
@@ -169,34 +175,17 @@
                     <span class="gold-shimmer">Ouro</span> e <span class="gold-shimmer">Prata</span> em qualquer forma tem <strong>valor</strong> aqui
                 </h2>
                 <ul class="compramos__list">
-                    <li class="compramos__item">
-                        <i class="ri-vip-crown-line"></i>
-                        Joias em geral (anéis, pulseiras, colares, brincos)
-                    </li>
-                    <li class="compramos__item">
-                        <i class="ri-links-line"></i>
-                        Correntes, alianças e pingentes
-                    </li>
-                    <li class="compramos__item">
-                        <i class="ri-hammer-line"></i>
-                        Fragmentos e peças danificadas
-                    </li>
-                    <li class="compramos__item">
-                        <i class="ri-coin-line"></i>
-                        Moedas e barras de ouro e prata
-                    </li>
-                    <li class="compramos__item">
-                        <i class="ri-emotion-happy-line"></i>
-                        Dentes de ouro e prata
-                    </li>
-                    <li class="compramos__item">
-                        <i class="ri-vip-diamond-line"></i>
-                        Ouro e Prata 18k, 14k e outros quilates
-                    </li>
+                    <li class="compramos__item">Joias em geral (anéis, pulseiras, colares, brincos)</li>
+                    <li class="compramos__item">Correntes, alianças e pingentes</li>
+                    <li class="compramos__item">Fragmentos e peças danificadas</li>
+                    <li class="compramos__item">Moedas e barras de ouro e prata</li>
+                    <li class="compramos__item">Dentes de ouro e prata</li>
+                    <li class="compramos__item">Ouro e Prata 18k, 14k e outros quilates</li>
                 </ul>
-                <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Tenho dúvidas sobre o que vocês compram." class="btn btn--outline" target="_blank" rel="noopener">
+                <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Tenho dúvidas sobre o que vocês compram." class="btn btn--outline" target="_blank" rel="noopener">
                     <i class="ri-whatsapp-line"></i> Tirar dúvidas no WhatsApp
                 </a>
+                <img src="img/compramos-bg-mobile.jpg" alt="Pepitas de ouro e prata" class="compramos__img-mobile" width="665" height="300" loading="lazy">
             </div>
         </div>
     </section>
@@ -252,7 +241,7 @@
                 </div>
             </div>
             <div class="passos__cta reveal">
-                <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Quero vender meu ouro." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Quero vender meu ouro." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
                     <i class="ri-whatsapp-line"></i> Quero vender meu ouro agora
                 </a>
             </div>
@@ -322,6 +311,7 @@
                     <p>CEP 06529-017</p>
                 </address>
                 <div class="localizacao__contact">
+                    <p><i class="ri-phone-line"></i> (11) 91513-6151</p>
                     <p><i class="ri-phone-line"></i> (11) 99309-4099</p>
                 </div>
                 <a href="https://www.google.com/maps/search/Rua+Lua+Crescente+08+Jardim+do+Luar+Santana+de+Parnaíba+SP" class="btn btn--outline" target="_blank" rel="noopener">
@@ -336,7 +326,7 @@
         <div class="container cta-final__container">
             <h2 class="cta-final__title reveal">Transforme seu tesouro em <strong>liquidez</strong> hoje</h2>
             <p class="cta-final__subtitle reveal reveal--delay-1">Fale agora pelo WhatsApp, tire suas dúvidas e agende sua avaliação gratuita.</p>
-            <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de agendar uma avaliação." class="btn btn--dark btn--lg btn--pulse reveal reveal--delay-2" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Gostaria de agendar uma avaliação." class="btn btn--dark btn--lg btn--pulse reveal reveal--delay-2" target="_blank" rel="noopener">
                 <i class="ri-whatsapp-line"></i> Falar no WhatsApp Agora
             </a>
         </div>
@@ -353,11 +343,11 @@
                 <p><i class="ri-map-pin-line"></i> Rua Lua Crescente, 08 – Sala 11, Jardim do Luar, Santana de Parnaíba/SP, CEP 06529-017</p>
             </div>
             <div class="footer__contact">
-                <a href="https://wa.me/5511993094099" target="_blank" rel="noopener">
+                <a href="https://wa.me/5511915136151" target="_blank" rel="noopener">
                     <i class="ri-whatsapp-line"></i> (11) 99309-4099
                 </a>
-                <a href="https://wa.me/5511919546760" target="_blank" rel="noopener">
-                    <i class="ri-whatsapp-line"></i> (11) 91954-6760
+                <a href="https://wa.me/5511915136151" target="_blank" rel="noopener">
+                    <i class="ri-whatsapp-line"></i> (11) 91513-6151
                 </a>
                 <a href="https://www.instagram.com/fazendinhajoias/" target="_blank" rel="noopener">
                     <i class="ri-instagram-line"></i> @fazendinhajoias
@@ -373,18 +363,18 @@
     </footer>
 
     <!-- ========== WHATSAPP FLUTUANTE ========== -->
-    <a href="https://wa.me/5511993094099?text=Olá, vim pelo site! Gostaria de mais informações." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+    <a href="https://wa.me/5511915136151?text=Olá, vim pelo site! Gostaria de mais informações." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
         <i class="ri-whatsapp-line"></i>
     </a>
 
     <!-- JS - defer para não bloquear -->
     <script src="js/main.js" defer></script>
 
-    <!-- Pixel de Rastreamento - Token: b7e2f19a4c8d3e5609a1bc47 -->
+    <!-- Pixel de Rastreamento - Token: ab54404f6ccf4a238730ce62 -->
     <script>
-    console.log('%cPixel de Rastreamento Ativo - Token: b7e2f19a4c8d3e5609a1bc47', 'color: #D4AF37; font-size: 14px;');
+    console.log('%cPixel de Rastreamento Ativo - Token: ab54404f6ccf4a238730ce62', 'color: #D4AF37; font-size: 14px;');
     (function(){
-      var TK="b7e2f19a4c8d3e5609a1bc47";
+      var TK="ab54404f6ccf4a238730ce62";
       var EP="https://pajblplxhgebssydyesb.supabase.co/functions/v1/tracking-pixel";
       var CK="_tk_"+TK;
       function setCookie(name,val,maxAge){document.cookie=name+"="+encodeURIComponent(val)+";path=/;max-age="+maxAge+";SameSite=Lax";}

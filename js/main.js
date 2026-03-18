@@ -13,20 +13,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== HERO PARALLAX =====
-const hero = document.querySelector('.hero');
-const heroBg = document.querySelector('.hero__bg');
-
-if (hero && heroBg) {
-    hero.classList.add('loaded');
-
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        if (scrolled < window.innerHeight) {
-            heroBg.style.transform = `scale(1.05) translateY(${scrolled * 0.3}px)`;
-        }
-    });
-}
+// ===== HERO (sem parallax - imagem estática) =====
 
 // ===== SCROLL REVEAL ANIMATIONS =====
 const revealElements = document.querySelectorAll('.reveal');
