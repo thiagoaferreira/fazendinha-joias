@@ -922,6 +922,8 @@ address {
         width: 100vw;
         margin-left: -20px;
         max-width: none;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%);
+        mask-image: linear-gradient(to bottom, transparent 0%, black 15%);
     }
 
     .compramos::after {
